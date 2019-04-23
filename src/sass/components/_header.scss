@@ -163,7 +163,7 @@
     @include r(1040) {
         transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
         transform: translateY(0);
-        z-index: 4; 
+        z-index: 4;
     }
 }
 
@@ -510,7 +510,7 @@
     height: 50;
     position: absolute;
     top: 30px;
-    right: 25px;
+    right: 35px;
     z-index: 10;
     cursor: pointer;
 
@@ -524,12 +524,11 @@
 }
 
 .hamburger-item {
-    height: 3px;
+    height: 4px !important;
     background-color: #ffffff;
     display: block;
     margin-bottom: 8px;
     transition: all 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
-
     &:first-child {
         width: calc(100% * (5 / 6));
     }
@@ -549,7 +548,7 @@
     .hamburger-item {
         &:first-child {
             width: 100%;
-            transform: translate(0, 11px) rotate(45deg);
+            transform: translate(0, 11px) rotate(45deg) !important;
         }
 
         &:nth-child(2) {
@@ -558,7 +557,7 @@
 
         &:last-child {
             width: 100%;
-            transform: translate(0, -11px) rotate(-45deg);
+            transform: translate(0, -12.5px) rotate(-45deg) !important;
         }
     }
 }
